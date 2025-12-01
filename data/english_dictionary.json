@@ -1,0 +1,28 @@
+{
+    "hello": {
+        "pos": "INTJ",
+        "type": "greeting"
+    },
+    "world": {
+        "pos": "NOUN",
+        "number": "singular"
+    },
+    "cats": {
+        "pos": "NOUN",
+        "number": "plural",
+        "root": "cat"
+    },
+    "played": {
+        "pos": "VERB",
+        "tense": "past",
+        "root": "play"
+    },
+    "computer": {
+        "pos": "NOUN",
+        "number": "singular"
+    },
+    "analysis": {
+        "pos": "NOUN",
+        "number": "singular"
+    }
+}

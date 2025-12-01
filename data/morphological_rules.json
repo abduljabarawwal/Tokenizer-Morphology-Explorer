@@ -1,0 +1,23 @@
+{
+    "suffixes": {
+        "ים": {
+            "gender": "masculine",
+            "number": "plural"
+        },
+        "ות": {
+            "gender": "feminine",
+            "number": "plural"
+        }
+    },
+    "prefixes": {
+        "ה": {
+            "definiteness": "definite"
+        },
+        "ב": {
+            "preposition": "in"
+        },
+        "ל": {
+            "preposition": "to"
+        }
+    }
+}

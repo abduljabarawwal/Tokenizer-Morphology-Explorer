@@ -1,0 +1,42 @@
+{
+    "ספר": {
+        "gender": "masculine",
+        "number": "singular",
+        "person": "3",
+        "tense": "-",
+        "binyan": "-",
+        "state": "absolute",
+        "definiteness": "indefinite",
+        "pos": "NOUN"
+    },
+    "קראתי": {
+        "gender": "both",
+        "number": "singular",
+        "person": "1",
+        "tense": "past",
+        "binyan": "qal",
+        "state": "-",
+        "definiteness": "-",
+        "pos": "VERB"
+    },
+    "היום": {
+        "gender": "masculine",
+        "number": "singular",
+        "person": "-",
+        "tense": "-",
+        "binyan": "-",
+        "state": "absolute",
+        "definiteness": "definite",
+        "pos": "ADV"
+    },
+    "אישה": {
+        "gender": "feminine",
+        "number": "singular",
+        "person": "3",
+        "tense": "-",
+        "binyan": "-",
+        "state": "absolute",
+        "definiteness": "indefinite",
+        "pos": "NOUN"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "nuqneH": {
+        "pos": "INTJ",
+        "translation": "What do you want? (Hello)",
+        "type": "greeting"
+    },
+    "tlhIngan": {
+        "pos": "NOUN",
+        "translation": "Klingon",
+        "type": "being"
+    },
+    "Hol": {
+        "pos": "NOUN",
+        "translation": "Language",
+        "type": "thing"
+    },
+    "Qapla'": {
+        "pos": "INTJ",
+        "translation": "Success",
+        "type": "exclamation"
+    },
+    "jIyaj": {
+        "pos": "VERB",
+        "translation": "I understand",
+        "root": "yaj",
+        "prefix": "jI-"
+    },
+    "yaj": {
+        "pos": "VERB",
+        "translation": "understand",
+        "type": "action"
+    },
+    "maH": {
+        "pos": "PRON",
+        "translation": "we",
+        "type": "pronoun"
+    }
+}
