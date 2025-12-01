@@ -1,4 +1,4 @@
-# Hebrew Tokenizer & Morphology Explorer
+# Hebrew / Klingon / English Tokenizer & Morphology Explorer
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg?style=flat&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/streamlit-1.28+-FF4B4B.svg?style=flat&logo=streamlit&logoColor=white)
